@@ -1,0 +1,337 @@
+Rajesh Kumar
+=====================
+www.RajeshKumar.xyz
+============================
+Everyday 6 Hours - 
+=============
+30 mins - Lunch
+10 mins - 2 Coffee /Rest room.
+=======================================
+Demo -> AWS Demo
+Lab -> VMs In local
+=======================================
+9:00 AM - 3:00 PM
+
+Lunch - 1:00 - 1:30 PM
+Rest/Coffee - 10:30 - 10 mins
+=======================================
+Co-ordinating - Ramya / Shamik
+Call num - +91 8105843520
+====================================
+
+What is DevOps?
+===========================
+Devops is a collections of many things...
+		Redefined mindsets
+		best Pracitices
+		best Processs
+		Best automation
+		Best Integration
+==================================================
+For what?
+		Reduce a soft dev cost / running cost
+		Improving a Quality of software
+		Immediate release
+==========================================================
+https://www.devopsschool.com/videos/387/complete-cicd-devops-implementation-from-scratch-using-jenkins-by-devopsschool/
+=============================================================
+
+Why we need so many tools?
+===================================
+THERE IS NO ONE Tool WHICH CAN SERVE all OF Agile requirement
+===============================================================
+	Each tools supports - Integration with others.
+
+Each tools now a days
+	----
+	EASY TO LEARN
+	EASY TO TEST
+	EASY TO Debug
+	EASY TO SHARE
+	EASY TO APPLY
+===============================================================
+What are tools we have? ---- 500 tools.  NO...
+============================================
+What is the prb you have??????
+============================================
+Prb in SDLC cycle?
+=============================
+Prod Name - MotoMod - 20 FEATURE
+Team - 20 People
+=============================
+Dev-QA-Ops Time v1 - 1 MONTH
+====================================================================
+Dev Model-> Watrefall -> Agile -> DevOps -> DevSecOps
+
+Software Architecture
+=================================================================
+Monolithic --> SOA -> MICROSERVICES
+
+Platforms
+============================================================
+Physical --> Virtual Machine --> Container
+=====================================================
+Prb in SDLC cycle?
+================================================
+Plan - Jira - Confluence
+
+Coding
+	IDE
+	Versioning -> Git --> Github
+	Code Review -> Gerrit - SonarQube
+	Build - Maven
+	UT 
+	Packaging - RPM - Exe -
+	Archive - Artifactory
+	Deploy2Qa- Ansible ----> Exisiting server
+		1 Dep ----> 10 mins
+		100 Dep ---> 10 mins
+		--------Ansible ---------------
+
+		100 Dep ---> 1 SEC
+		-------------------------------
+		Container - With Docker - Kub8		
+
+	AT
+		nnn
+	CodeCoverage - Jacoco
+	==============================
+	ALL PASS - RELEASE 
+
+Plan->Code->Ana->Build->UT->Pack->Arch->Deploy->AT->CC		= PROCESS
+=========================================================
+Jira-git--sonar--maven-junit-jar-artifac-ansible-sel-jacoco	= TOOLS
+=============================================================
+			JENKINS
+
+
+= PROCESS Integration - DEVOPS Concept
+= TOOLS Integration - JENKINS
+
+
+			IF SOME FAILED BUT INTEG--
+					Continous Integration
+			IF ALL PASSED 	
+					Continous Delivery
+			IF SEND TO PROD JUST AFTER CD
+					Continous Deployment
+				
+===========================
+OPS
+	Monitoring
+https://www.devopsschool.com/path/
+
+Terraform
+https://www.devopsschool.com/videos/
+==================================================================================
+==================================================================================
+What is Maven?
+	Project mgmt tool
+		Build
+		test
+		package
+		install	
+		deploy
+		document
+		reports
+	Dependency mgmt tool.	
+	Written in JAVA
+	For Java Projects
+	Open Source
+	Free
+	From Apache
+	Release
+		3.X
+History of Maven
+==========================
+Maven was dev for managing Apache Products
+	- directoy for src code
+	- directory for test code
+	- directory for class
+	- directory for pack
+	- test caes
+	build
+	test
+	package
+	verify
+	inst
+	deply
+	checkout 
+
+
+
+=============================================================
+Why Maven?
+	Lots of adhoc steps you need to perform
+	in Order to 	build
+			test
+			package
+			release
+			etc
+	============================================
+	Maven would autoamte all.
+	in built Dependency mgmt 
+======================================================
+ANT VS Maven
+
+==================================================
+Other tools
+makefile--> Ant -> Maven - Gradle
+Msbuild
+
+=========================================================
+How maven works!!!!!
+==========================================
+Maven
+	Dev using Plugins based concepts..
+
+	CORE
+		PLUGINS
+		- Core Plugins
+		- Community plugins
+==========================
+Plugins AKA feature
+==============================================================================
+Lifecycle in Human being
+===================================
+Born -> kid -> Teen -> Young -> Mid -> OLd -> Die
+--------------------------------------------------
+		PHASE(S)
+		Controlled - GOD
+
+Project Lifecycle in maven
+===================================
+Plan->Code->Ana->Build->UT->Pack->Arch->Deploy->AT->CC		
+------------------------------------------------
+		PHASE(S)
+		Controlled - Maven
+		THAT MANTRA IS BEING USED tO CONtROL A FLOW OF PHASES ----- GOAL
+
+Maven Lifecycle
+===========================
+https://maven.apache.org/ref/3.6.3/maven-core/lifecycles.html
+
+default Lifecycle
+clean Lifecycle
+site Lifecycle
+=======================================================================
+Lifecycle		PHASES			MANTRA(GOAL)	
+			compile			compile		from Core Plugins
+			test			test		from Core Plugins
+			package			package		from Core Plugins
+			install			install		from Core Plugins
+			deploy			deploy		from Core Plugins				
+=================================================================================
+Project Name --> MotoMod
+Release version ->
+		SNAPSHOT - NOT STABLE -.eg 1.0-SNAPSHOT
+		RELEASE -- STABLE -- e.g 1.0, 1.1.1, 2.0
+Project Skeleton
+	Aka directory struture
+Projects Depency??
+	List down
+Project Group?
+Project Artifact?
+-------------------------------
+
+CTO 
+	Account
+		25 Microservices
+	Order	
+		25 Microservices
+	Prouc
+		25 Microservices
+	Backend
+		25 Microservices
+==============================================
+MS
+	CTO
+		MSOFFICE
+			DOMAIN
+				WORD
+					FEATURE 1-100
+					Artifact 1
+					Artifact 2		
+					Artifact 3
+
+				POWER
+				Excel
+				Access
+				Projec
+				COMMON
+=================================================
+java file | cc++ | 
+
+package com.xys.mnp
+package org.xys.mnp
+===========================================
+What is the directory ske for
+			code
+			test
+			etc...
+				---Suggested by Maven...
+==================================================================
+
+CODE FOR PRODUCT
+CODE FOR TESTING A PRODUCT
+===============================
+
+
+How to install maven?
+	Pre
+		Install JDK 8	https://openjdk.java.net/
+		SET JAVA_HOME
+	Download Maven
+	Extract Maven
+	Copy to your fac place
+	SET maven_dir/bin  INTO PATH
+================================
+How to verify Maven?
+mvn
+mvn -version
+mvn -help
+
+
+lnt-april-devops-online-2020
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
