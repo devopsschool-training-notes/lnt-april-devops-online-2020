@@ -294,17 +294,56 @@ mvn -help
 
 lnt-april-devops-online-2020
 
+===========================================================================================
+
+mvn archetype:generate
+
+mvn archetype:generate
+cmd plugins   goal
+
+-DgroupId=com.companyname.software
+-DartifactId=financialService
+-DarchetypeArtifactId=maven-archetype-quickstart
+-DinteractiveMode=false
 
 
+mvn archetype:generate -DgroupId=com.devopsschool.software -DartifactId=MotoMod -DarchetypeArtifactId=maven-archetype-quickstart -
+
+DinteractiveMode=false
 
 
+archetypeArtifactId
+	maven-archetype-quickstart
+	https://maven.apache.org/components/archetypes/index.html
 
 
+Now - 
+BECOME A DEV
+BECOME A QA
 
 
+What is pom.xml?
+	Project Object Model?
+	-----------------------------
+	XML file
+	based on model of object
+		elements...
 
+Packaging - jar - war -ear - pom
 
+=======================================================================
+Lifecycle		PHASES			MANTRA(GOAL)	
+			compile			compile		from Core Plugins
+			test			test		from Core Plugins
+			package			package		from Core Plugins
+			install			install		from Core Plugins
+			deploy			deploy		from Core Plugins				
+=================================================================================
 
+> tree
+> mvn compile	
+> mvn test	
+> mvn package
 
 
 
