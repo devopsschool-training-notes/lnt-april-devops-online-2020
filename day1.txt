@@ -345,16 +345,45 @@ Lifecycle		PHASES			MANTRA(GOAL)
 > mvn test	
 > mvn package
 
+=====================================================
+How maven solve a dependencies?
+=====================================
+mvn -> pom.xml 
+		TRY TO RESOLVE DEP usign Local Repo
+				C:\Users\Rajesh Kumar\.m2\repository
+
+				If pack is not exist...
+				maven would download from REMOTE to LOCAL repo.
+				REMOTE  - 
+				https://repo.maven.apache.org/maven2/
+				and Then use it...
 
 
+TYPE OF REPO
+	Local	
+	Remote
+		Central - READ ONLY - PUBLIC
+		Private	- nexus- Artificatory - READ - WRITE
 
 
+Diff between install and Deploy
+=================================================
+install 
+It would deploy a packe to LOCAL REPO
+
+Deploy -
+It would deploy a packe to Remote Private REPO
+==================================================================
+Property
+	cmd
+	pom.xml
 
 
-
-
-
-
+===========================================
+Modules
+Parents
+Profiles
+Settting.xml
 
 
 
