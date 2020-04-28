@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  
+  <groupId>com.devopsschool.software</groupId>
+  <artifactId>MotoMod</artifactId>
+  <packaging>jar</packaging>
+  <version>2.0</version>
+  <name>MotoMod</name>
+  <url>http://www.devopsschool.com</url>
+  
+  <properties>
+	<junitversion>3.8.1</junitversion>
+	<nameart>rajesh</nameart>
+  </properties>
+
+<distributionManagement>
+	<repository>
+		<id>lntdemo</id>
+		<name>Internal Releases</name>
+		<url>http://15.206.93.122:8082/artifactory/rajesh-release/</url>
+	</repository>
+	<snapshotRepository>
+		<id>lntdemo</id>
+		<name>Internal Releases</name>
+		<url>http://15.206.93.122:8082/artifactory/rajesh-snapshot/</url>
+	</snapshotRepository>
+</distributionManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junitversion}</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+      <groupId>jmdns</groupId>
+      <artifactId>jmdns</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+</project>
+
+
+
