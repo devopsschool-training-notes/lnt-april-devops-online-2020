@@ -91,4 +91,98 @@ Step 5 - mvn Project 1  com/ins/ddd
 Sample projects - 
 https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
 
+========================================================================
+========================================================================
+What is Jenkins?
+	CI tool
+	Dev in JAVA 
+	GUI BASED
+	Release
+		Open Source - Communinty - Free
+		Cloudbess - Paid 
+			Stable - Secure - tested plugins  
+	Plugins
+		1000s plugins - dev - by Communinty
+
+What is CI?
+	Continous Integration
+	Auto Build + Auto Test + Imm feedback
+
+Plan->Code->Ana->Build->UT->Pack->Arch->Deploy->AT->CC		= PROCESS
+=========================================================
+Jira-git-->sonar-->maven->junit-jar-artifac-ansible-sel-jacoco	= TOOLS
+=============================================================
+			JENKINS
+				Automate ANY Step(S) 
+				Schedule
+				Integation of ALL TOOLS
+				Dashboarding
+					feedback
+
+Why CI?
+=======================
+
+
+
+Other Tools - 
+		Hosted - Jenkins - Teamcity - Bamboo - UBuild - BlueOcean - TFS
+		Cloud - 
+
+https://www.devopsschool.com/top10tools
+https://www.devopsschool.com/compare/
+=============================================
+Architecture of Jenkins? AKA How jenkins works?
+===========================================================
+https://www.devopsschool.com/blog/jenkins-architecture-explained/
+
+
+How to install Jenkins?
+=============================
+	JRE --> JDK
+https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+========================================================================
+========================================================================
+Working with Jenkins - Basic Workflow in jenkins
+===================================================
+SECRET FORMULA
+===============
+Question 1 - What is your technology?
+		java
+
+Question 2 - What is your Builder?
+		maven
+
+Question 3 - Where is your source Code?
+		git
+		https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+
+Question 4 - How often you want to trigger this job?
+		daily
+
+Question 5 - Whom you want to send feedback?	
+		rajesh@scmgalaxy.com
+
+
+
+docker run -d -p 8080:8080 jenkins
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
