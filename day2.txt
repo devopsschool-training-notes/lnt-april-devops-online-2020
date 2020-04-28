@@ -1,0 +1,76 @@
+How to Install
+======================
+15.206.93.122
+
+https://akamai.bintray.com/e6/e6a3f5f03d572fbe7b10dc255c4438feb9dbfeb9256ce08a62a373aedafd2578?
+
+__gda__=exp=1588048074~hmac=9f0f187436126347daf297c46a6444a3a9e2a0c931c277365396482977387c20&response-
+
+content-disposition=attachment%3Bfilename%3D%22jfrog-artifactory-pro-7.4.3-linux.tar.gz%22&response-
+
+content-type=application%2Foctet-
+
+stream&requestInfo=U2FsdGVkX1_hSyEv2ivCSlALAb9pjFFftku8HrEHCSYRHd6ySiVoRxEiJ9HOpimQktzPoR9FJ6K_RlHK7NS
+
+JI3wyHfS5toM1uFOu894RUpuQzTtcxdOKpC5GZkmOkpaq05rMWQStE9kpEcYCP1V5rR-rMe7V-
+
+MpXNpxaLf9lqY4el6XE_7LFV2jKan2shOxoHip2VuTAM65WBXZ2cE-MXFzvL5GRBYJI_dmDoHdto_pmSA-
+
+CKGp4Kw97lNNmQ83G8hunfhbGM6Iy_J6RYCBfTk2_WQRjsdEHnNQ61MUbZ6I&response-X-Checksum-
+
+Sha1=bae75567d93fe67833a1327675ec6f641eb65c73&response-X-Checksum-
+
+Sha2=e6a3f5f03d572fbe7b10dc255c4438feb9dbfeb9256ce08a62a373aedafd2578
+
+[root@ip-172-31-27-249 artifactory-pro-7.4.3]# tree  -L 2
+.
+├── app
+│   ├── artifactory		Config file
+│   ├── bin			START STOP SCRIPT
+│   ├── doc
+│   ├── frontend
+│   ├── metadata
+│   ├── misc
+│   ├── replicator
+│   ├── router
+│   └── third-party
+└── var
+    ├── bootstrap
+    └── etc			Config file
+
+
+
+
+http://15.206.93.122:8081
+http://15.206.93.122:8082/ui/login/
+admin
+admin123
+============WORKFLOW WITH Artifactory=========================
+Step 1 - Create a group
+Step 2 - Create a user
+Step 3 - Login using user and 
+Step 4 - Create a local repo - maven
+Step 5 - Create a remote repo - maven
+Step 6 - Create a virtual repo - maven
+
+============WORKFLOW WITH Artifactory using Maven=========================
+rajesh
+devops123
+
+
+Maven - RELEASE
+		SNAPSHOT
+		RELEASE
+
+Step 4 - Create a local repo - maven
+http://15.206.93.122:8082/artifactory/rajesh-release/
+http://15.206.93.122:8082/artifactory/rajesh-snapshot/
+Step 5 - Create a remote repo - maven
+http://15.206.93.122:8082/artifactory/central/
+Step 6 - Create a virtual repo - maven
+http://15.206.93.122:8082/artifactory/rajesh-group/
+
+
+
+
+
