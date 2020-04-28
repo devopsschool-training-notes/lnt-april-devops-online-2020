@@ -71,6 +71,24 @@ Step 6 - Create a virtual repo - maven
 http://15.206.93.122:8082/artifactory/rajesh-group/
 
 
+http://15.206.93.122:8082/artifactory/raj-snapshot-local/
+http://15.206.93.122:8082/artifactory/raj-release-local/
+http://15.206.93.122:8082/artifactory/rajvirtual/
+===================================================
+How to upload artifact in Artifactory using Maven?
+Step 1 - Modify your pom.xml with repo
+Step 2 - Modify your setting.xml with access
+Step 3 - make sure that pom.xml element id(distr*) and setting.xml element id(server*) MUST MAtCH
+Step 4 - mvn deploy	
 
+How to Download artifact in Artifactory using Maven?	
+Step 1 - First have 2 Project and Deploy it.
+Step 2 - Project 1 is dependent on Project2 (pom.xml -> depend*
+Step 3 - In setting.xml - mirror* with virutal repo
+Step 4 - make sure that mirror element id and setting.xml element id(server*) MUST match
+Step 5 - mvn Project 1  com/ins/ddd
+
+Sample projects - 
+https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
 
 
