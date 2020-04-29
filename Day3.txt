@@ -1,0 +1,27 @@
+========================================================================
+========================================================================
+Working with Jenkins - Basic Workflow in jenkins
+===================================================
+SECRET FORMULA
+===============
+Question 1 - What is your technology?
+		java
+
+Question 2 - What is your Builder?
+		maven
+
+Question 3 - Where is your source Code?
+		git
+		https://github.com/devopsschool-demo-labs-projects/helloworld-java-maven
+
+Question 4 - How often you want to trigger this job?
+		daily
+
+Question 5 - Whom you want to send feedback?	
+		rajesh@scmgalaxy.com
+
+
+
+
+
+docker run -d -p 8080:8080 jenkins
