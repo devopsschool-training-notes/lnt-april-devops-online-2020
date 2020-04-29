@@ -221,15 +221,128 @@ $ docker images
   254  docker ps -a
   255  history
 
+WHAT IS PID 1
+=====================================
+PM 				VM				Container
 
-How to access/using container?
+running 			running 			running 
+as long as 			as long as			as long as 
+PID 1 is running		PID 1 is running		PID 1 is running	
+
+systemd				systemd				ANYTHING
+
+
+How to access(go inside) container?
 ==================================
+exec
+	will execute an executable inside a container and retrun 
+	- it and /bin/bash
+attach 
+	it would get attached to a terminal of PID1
+
+How to come out of container saftly?
+control+p+q
+
+ 271  docker ps -a
+  272  clear
+  273  docker ps
+  274  docker exec 9922e6b3b20a ps -eaf
+  275  docker exec 82f81f610d61 ps -eaf
+  276  docker unpuase 82f81f610d61
+  277  docker unpause 82f81f610d61
+  278  clear
+  279  docker exec 82f81f610d61 ps -eaf
+  280  docker run -its ubunti
+  281  docker run -its ubuntu
+  282  docker run -itd ubuntu
+  283  docker ps
+  284  docker exec ea36a271f106 ps -eaf
+  285  docker exec 82f81f610d61 ps -eaf
+  286  clear
+  287  docker ps
+  288  docker exec ea36a271f106 ls
+  289  docker exec ea36a271f106 df -kh
+  290  clear
+  291  docker exec ea36a271f106 ffff
+  292  clear
+  293  which sh
+  294  clear
+  295  echo $SHEL
+  296  echo $SHELL
+  297  clear
+  298  docker ps
+  299  docker exec -it ea36a271f106 /bin/bash
+  300  clear
+  301  clear
+  302  docker ps
+  303  docker attach ea36a271f106
+  304  clear
+  305  docker ps
+  306  docker attach 9922e6b3b20a
+  307  clear
+  308  docker ps
+  309  dcoker attach 82f81f610d61
+  310  dcoker attach 82f81f610d61
+  311  docker attach 82f81f610d61
+  312  clear
+  313  docker ps
+  314  history
+
+
+
+How to use container?
+==================================
+docker run -d -p 8080:8080 jenkins
+docker run -d -p 8090:8080 jenkins
 
 
 
 
-
-
+ 313  docker ps
+  314  history
+  315  c
+  316  ceaclear
+  317  clear
+  318  ifconfig
+  319  clear
+  320  docker ps -a
+  321  docker stop $(docker ps -a -q)
+  322  docker rm $(docker ps -a -q)
+  323  clear
+  324  docker ps -a
+  325  ifconfig
+  326  clear
+  327  docker run -itd ubuntu
+  328  docker ps
+  329  ifconfig
+  330  clear
+  331  docker ps
+  332  docker inspect 482ae3c83df1
+  333  clear
+  334  ping 172.17.0.2
+  335  docker run -d jenkins
+  336  docker ps
+  337  docker inspect 1efc2b5139f6
+  338  curl http://172.17.0.3:8080
+  339  clear
+  340  docker -s
+  341  clear
+  342  docker ps
+  343  docker stop 1efc2b5139f6 482ae3c83df1
+  344  docker rm 1efc2b5139f6 482ae3c83df1
+  345  clear
+  346  docker run -d -p 8080:8080 jenkins
+  347  docker ps
+  348  ps -eaf
+  349  clear
+  350  ps -eaf | grep jenkins
+  351  systemctl stop jenkins
+  352  clear
+  353  docker ps
+  354  docker run -d -p 8080:8080 jenkins
+  355  docker run -d -p 8090:8080 jenkins
+  356  docker ps
+  357  history
 
 
 
