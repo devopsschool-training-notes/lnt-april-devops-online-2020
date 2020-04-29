@@ -26,8 +26,216 @@ Question 4 - How often you want to trigger this job?
 Question 5 - Whom you want to send feedback?	
 		rajesh@scmgalaxy.com
 
+==========================================================================================
+===========================================================================================
+Jenkins
+https://www.devopsschool.com/videos/show/jenkins?type=video
+
+Pipeline jenkinsfile code
+https://github.com/devopsschool-sample-programs/jenkins-groovy-scripts-collection
+https://github.com/devopsschool-sample-programs/jenkins-jenkinsfile-example-collection
+https://www.devopsschool.com/videos/387/complete-cicd-devops-implementation-from-scratch-using-
+
+jenkins-by-devopsschool/
+==========================================================================
+==========================================================================
+==========================================================================
+Docker
+===========================================================================
+RUN APP
+=============================
+physcial --> VIRTUAL --> CONTAINER
+=============================================================
+What is Docker?
+	Container mgmt tool.
+
+What is Container?
+=============================
+	Lightweight
+	indepent 
+	app
+	runtime
+	env
+
+
+Container is noting but
+		userspace
+			with
+				their own
+					MOUNT
+					Net
+					PMAP
+
+Containers are nothing user so its powered by KERANL but manage docker.
 
 
 
 
-docker run -d -p 8080:8080 jenkins
+3 APPS
+==========================
+CPU + RAM + STORAGE + OS
+====================================
+
+What are the things you need to run any app in COMPUTE unit
+====================================================
+OS -> KERANL -> 
+		NAMESPACE
+			USER - 1	MANY
+			NET  - 1	
+			PMAP - 1
+			MOUNT - 1
+		CGROUPS
+			IO
+			CPU
+			RAM
+		CAPABILITY 
+			ACCESS
+==============================================
+How to More app in the same HARDWARE?
+
+=============================================================================
+https://www.devopsschool.com/videos/show/video?type=video
+
+Components of Docker
+===============================================
+Docker Engine  - A tool which need to be install.
+	human -> Docker Clinet -> RESTAPI -> Docker Deamon --> ContainerD -> RUNC -> Kernal
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-
+
+rhel.html
+=============================================================================
+=====================================================================================
+Step 1 - Install required packages. yum-utils provides the yum-config-manager utility, and device-
+
+mapper-persistent-data and lvm2 are required by the devicemapper storage driver.
+$ sudo -s
+$ 
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+Step 2 - Use the following command to set up the stable repository
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+Step 3 - Install the latest version of Docker CE
+$ sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+$ sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+$ sudo yum install -y docker-ce
+$ sudo yum install docker-ce
+# Verify Docker Installations
+$ docker -v
+
+# Docker is installed but not started. The docker group is created, but no users are added to the 
+
+group.
+
+Step 4 - Enable Docker
+$ sudo systemctl enable docker
+
+Step 5 - Start Docker
+$ sudo systemctl start docker
+$ docker info
+=====================================================================================
+=====================================================================================
+Docker Image
+	ROOTFS + APPFS 
+
+Docker Registry
+	https://hub.docker.com/
+		Repository
+		jenkins
+Docker container
+	run image - get one container
+	run 10 time - 10 container
+
+
+
+
+OS
+====================
+bootfs -> rootfs -> appfs 
+
+
+
+
+Lets start working with containers
+==============================================================================
+create -> start -> stop -> start-> pause -> unpause -> kill ->start -> stop -> remove
+
+
+How to check running container?
+$ docker ps
+How to check all container?
+$ docker ps -a
+How to check images in my docker?
+$ docker images
+
+204  more /etc/passwd
+  205  clear
+  206  docker
+  207  clear
+  208  clear
+  209  docker ps
+  210  docker ps -a
+  211  docker rm 46a93ba62f30
+  212  clear
+  213  cd
+  214  clear
+  215  ls
+  216  docker ps
+  217  docker ps -a
+  218  docker images
+  219  docker pull jenins
+  220  docker pull jenkins
+  221  clear
+  222  docker images
+  223  clear
+  224  ls
+  225  docker create jenkins
+  226  docker ps
+  227  docker ps -a
+  228  docker create jenkins
+  229  docker ps -a
+  230  clear
+  231  docker ps -a
+  232  docker start b705a8d8381d
+  233  docker ps -a
+  234  docker stop b705a8d8381d
+  235  docker ps -a
+  236  clear
+  237  docker ps -a
+  238  docker start b705a8d8381d
+  239  docker ps -a
+  240  docker pause b705a8d8381d
+  241  docker ps -a
+  242  clear
+  243  docker unpause b705a8d8381d
+  244  clear
+  245  docker ps -a
+  246  docker kill b705a8d8381d
+  247  docker ps -a
+  248  docker start b705a8d8381d
+  249  docker ps -a
+  250  clear
+  251  docker stop b705a8d8381d
+  252  docker ps -a
+  253  docker rm b705a8d8381d
+  254  docker ps -a
+  255  history
+
+
+How to access/using container?
+==================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
