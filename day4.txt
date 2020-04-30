@@ -380,3 +380,5 @@ ansible webserver -i inventory -m service -a"name=httpd state=started" -u ec2-us
 ===================
 devops@Rajeshkumar.xyz
 
+Assignment - https://www.devopsschool.com/blog/ansible-playbook-lab-excercise-part-2/
+
