@@ -109,10 +109,10 @@ Ansible -> .yaml(playbook) -> role -----> OPS/TEST
 
 
 	using ADHOC command 
-		Do one task in ONE MACHINE(localhost)
-		Do one task in ONE REMOTE MACHINE
-		Do one task in MULTIPLE REMOTE MACHINES using Inventory
-		Do one task in MULTIPLE REMOTE MACHINES using group in Inventory
+		Do one task in ONE MACHINE(localhost)		DONE
+		Do one task in ONE REMOTE MACHINE		DONE
+		Do one task in MULTIPLE REMOTE MACHINES using Inventory	DONE
+		Do one task in MULTIPLE REMOTE MACHINES using group in Inventory DONE
 
 
 =====================================================================================
@@ -195,6 +195,7 @@ optional arguments:
                         connection debugging)
 
 Privilege Escalation Options:
+============================================================
   control how and which user you become as on target hosts
 
   --become-method BECOME_METHOD
@@ -208,6 +209,7 @@ Privilege Escalation Options:
                         prompting)
 
 Connection Options:
+================================================================
   control as whom and how to connect to hosts
 
   --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
@@ -252,6 +254,13 @@ https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
 
 
 inventory
+==================================================
+is LIST of IP address.
+		COMMAND
+		file
+		directory
+		Script
+
 Playbook
 Access	
 
@@ -279,10 +288,47 @@ TEST 1 - https://www.devopsschool.com/blog/ansible-adhoc-commands-lab-excercise-
 
 
 
+ACS - 13.232.239.181
+ARS - 52.66.111.23
+
+ansible all -i 52.66.111.23, -m yum -a"name=httpd state=present" -u ec2-user --key-file=node.pem -b
+ansible all -i 52.66.111.23, -m copy -a"dest=/var/www/html src=index.html" -u ec2-user --key-file=node.pem -b
+ansible all -i 52.66.111.23, -m service -a"name=httpd state=started" -u ec2-user --key-file=node.pem -b
+
+
+How to auth remote machine?
+	username - passowrd
+	username - key
+
+ansible all -i 
+
+52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.66.111.23,52.
+
+66.111.23,52.66.111.23, -m yum -a"name=httpd state=present" -u ec2-user --key-file=node.pem -b
+
+[root@ip-172-31-19-251 ~]# more inventory
+13.232.239.181
+52.66.111.23
+
+
+ansible all -i inventory -m yum -a"name=httpd state=present" -u ec2-user --key-file=node.pem -b
+ansible all -i inventory -m copy -a"dest=/var/www/html src=index.html" -u ec2-user --key-file=node.pem -b
+ansible all -i inventory -m service -a"name=httpd state=started" -u ec2-user --key-file=node.pem -b
 
 
 
+[root@ip-172-31-19-251 ~]# more inventory
+[webserver]
+13.232.239.181
+52.66.111.23
 
+[dbserver]
+3.4.4.4
+5.6.6.6
+7.8.8.8
 
+ansible webserver -i inventory -m yum -a"name=httpd state=present" -u ec2-user --key-file=node.pem -b
+ansible webserver -i inventory -m copy -a"dest=/var/www/html src=index.html" -u ec2-user --key-file=node.pem -b
+ansible webserver -i inventory -m service -a"name=httpd state=started" -u ec2-user --key-file=node.pem -b
 
 
