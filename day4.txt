@@ -262,6 +262,23 @@ is LIST of IP address.
 		Script
 
 Playbook
+yaml file
+
+	play1
+		Hosts: group
+		Tasks
+			Task1 - Module name with param
+			Task2 - Module name with param
+			Task3 - Module name with param
+	play2
+		Hosts:
+		Tasks
+	play3
+		Hosts:
+		Tasks
+
+
+
 Access	
 
 ============================================================================================
@@ -331,4 +348,35 @@ ansible webserver -i inventory -m yum -a"name=httpd state=present" -u ec2-user -
 ansible webserver -i inventory -m copy -a"dest=/var/www/html src=index.html" -u ec2-user --key-file=node.pem -b
 ansible webserver -i inventory -m service -a"name=httpd state=started" -u ec2-user --key-file=node.pem -b
 
+
+
+
+
+
+
+---
+- name: This sets up an httpd webserver
+  hosts: all
+  vars:
+    myname: "rajesh kumar"
+    package: "httpd"
+    service: "httpd"
+  tasks:
+  - name: Install the httpd apps
+    yum: name={{ package }} state=installed
+  - name: start the httpd service
+    service: name={{ service }} state=started
+  - name: create a empty fle
+    file: dest=/opt/test.txt state=touch
+  - name: copy a file
+    copy: dest=/var/www/html/ src="index.html"
+  - name: Ansible debug print example.
+    debug:
+      msg: "{{ myname }}"
+
+
+
+#ansible-playbook -i inventory playbook.yaml -u ec2-user --key-file=node.pem -b 
+===================
+devops@Rajeshkumar.xyz
 
