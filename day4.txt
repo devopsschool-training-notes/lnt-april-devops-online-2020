@@ -388,8 +388,21 @@ ansible-galaxy init raju
 ==================================================================
 #ansible-playbook -i inventory site.yaml -u ec2-user --key-file=node.pem -b
 
+===============================================
+
+Tuturials	https://www.devopsschool.com/tutorial/
+Slides		https://www.devopsschool.com/slides/
+PDT		https://www.devopsschool.com/pdf/
+Blogs		https://www.devopsschool.com/blog/
+Notes		https://github.com/devopsschool-training-notes/lnt-april-devops-online-2020
+sampleprograms	github
+Video		https://www.youtube.com/TheDevOpsSchool
+Quiz		https://www.devopsschool.com/lms/		
 
 
+
+
+www.RajeshKumar.xyz
 
 
 
