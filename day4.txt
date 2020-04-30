@@ -382,3 +382,18 @@ devops@Rajeshkumar.xyz
 
 Assignment - https://www.devopsschool.com/blog/ansible-playbook-lab-excercise-part-2/
 
+
+Role
+ansible-galaxy init raju
+==================================================================
+#ansible-playbook -i inventory site.yaml -u ec2-user --key-file=node.pem -b
+
+
+
+
+
+
+
+
+
+
